@@ -1,7 +1,7 @@
 <div class="container">
   <h2>User Settings</h2>
 
-  <form #form="ngForm" ngNativeValidate>
+  <form #form="ngForm" (ngSubmit)="onSUbmit(form)">
 
     <div class="form-group">
       <label for="name">Name</label>
